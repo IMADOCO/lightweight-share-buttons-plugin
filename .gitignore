@@ -1,0 +1,5 @@
+node_modules/
+lightweight-share-buttons.zip
+.DS_Store
+Thumbs.db
+npm-debug.log*
