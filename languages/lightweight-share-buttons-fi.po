@@ -1,25 +1,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
-"Language: pl_PL\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Share"
-msgstr "Udostępnij"
+msgstr "Jaa"
 
 msgid "Copy Link"
-msgstr "Kopiuj link"
+msgstr "Kopioi linkki"
 
 msgid "Email"
-msgstr "E-mail"
+msgstr "Sähköposti"
 
 msgid "Share this page"
-msgstr "Udostępnij tę stronę"
+msgstr "Jaa tämä sivu"
 
 msgid "Copied!"
-msgstr "Skopiowano!"
+msgstr "Kopioitu!"
 
 msgid "Copy this link:"
-msgstr "Skopiuj ten link:"
+msgstr "Kopioi tämä linkki:"

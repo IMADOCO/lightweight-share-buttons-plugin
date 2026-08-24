@@ -34,6 +34,8 @@ wp i18n make-pot . languages/lightweight-share-buttons.pot --exclude=node_module
 
 Polish translations are included in `languages/lightweight-share-buttons-pl_PL.po`.
 
+Bundled translations are available for Albanian, Arabic, Chinese (Simplified), Czech, Danish, Dutch, Estonian, Finnish, French, Georgian, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Latin, Lithuanian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, and Ukrainian.
+
 ## Privacy
 
 No request is made to a sharing service before the visitor clicks its button. No data, cookies, telemetry, or share history are collected.

@@ -26,6 +26,8 @@ Features:
 
 No accounts, API keys, tracking, telemetry, SDKs, or remote assets are used.
 
+Bundled translations: Albanian, Arabic, Chinese (Simplified), Czech, Danish, Dutch, Estonian, Finnish, French, Georgian, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Latin, Lithuanian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, and Ukrainian.
+
 == Installation ==
 
 1. Upload the plugin directory to `/wp-content/plugins/` or install its ZIP file.
@@ -46,6 +48,19 @@ It appears only in browsers that support the Web Share API. Copy Link remains av
 
 1. The block displayed on a page.
 2. Platform and appearance controls in the editor.
+
+== Development ==
+
+The human-readable source code, build configuration, and development tools are maintained in the public repository:
+
+https://github.com/IMADOCO/lightweight-share-buttons-plugin
+
+The repository includes the `src/` directory, `package.json`, `package-lock.json`, and the scripts required to reproduce the distributed `build/` files. With Node.js 20.19+ and npm 10.2+, run:
+
+1. `npm ci`
+2. `npm run build`
+
+To create the installable archive, run `npm run plugin-zip`.
 
 == Changelog ==
 

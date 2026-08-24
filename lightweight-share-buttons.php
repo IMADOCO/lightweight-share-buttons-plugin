@@ -19,6 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/** Load bundled translations. */
+function lightweight_share_buttons_load_textdomain() {
+
+	load_plugin_textdomain( 'lightweight-share-buttons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', 'lightweight_share_buttons_load_textdomain' );
+
 /** Register the block from its metadata. */
 function lightweight_share_buttons_register_block() {
 	register_block_type( __DIR__ . '/build' );
