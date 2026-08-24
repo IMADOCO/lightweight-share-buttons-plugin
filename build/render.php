@@ -125,9 +125,9 @@ $lightweight_share_buttons_wrapper_attributes = get_block_wrapper_attributes(
 	array(
 		'class'             => implode( ' ', $lightweight_share_buttons_class_names ),
 		'style'             => '--lsb-gap:' . absint( $attributes['gap'] ) . 'px',
-		'data-url'          => esc_url( $lightweight_share_buttons_url ),
-		'data-title'        => esc_attr( $lightweight_share_buttons_title ),
-		'data-text'         => esc_attr( $lightweight_share_buttons_text ),
+		'data-url'          => $lightweight_share_buttons_url,
+		'data-title'        => $lightweight_share_buttons_title,
+		'data-text'         => $lightweight_share_buttons_text,
 		'data-copied-label' => esc_attr__( 'Copied!', 'lightweight-share-buttons' ),
 		'data-copy-prompt'  => esc_attr__( 'Copy this link:', 'lightweight-share-buttons' ),
 	)
