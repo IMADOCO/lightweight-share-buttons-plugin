@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr_RS\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.735Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "Dugmad za lagano deljenje"
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "Lagani blok za deljenje na društvenim mrežama pogodan za privatnost sa nativnom podrškom za deljenje i kopiranje linkova."
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "Подели"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "Копирај везу"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "Е-пошта"
 
-msgid "Share this page"
-msgstr "Подели ову страницу"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "Копирано!"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "Копирајте ову везу:"
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "Подели ову страницу"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "Domaći udeo"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "Prevucite da biste promenili redos"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "Platforme"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "Omogućite više platformi ili promenite redosled aktivnih dugmadi."
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "Vrati podrazumevana podešavanja"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "Sadržaj"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "Prikaži naslov"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "Naslov"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "Prilagođeni naziv (nije obavezno)"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Koriste ga Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads i Reddit. Facebook i LinkedIn su pročitali naslov sa stranice Open Graph metapodaci."
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "Tekst poruke (nije obavezno)"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Koriste ga Native Share, WhatsApp, email, Telegram, X, Bluesky i Threads. Facebook i LinkedIn ne prihvataju prilagođenu poruku; Reddit koristi samo naslov i URL."
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "Prilagođeni URL"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "Prilagođena URL adresa će biti podeljena."
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "Trenutna URL adresa stranice će se automatski deliti."
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "Unesite punu URL adresu ili domen, na primer example.com/page."
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "Izgled"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "Sadržaj dugmeta"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "Ikone i oznake"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "Samo ikone"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "Samo etikete"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "Veličina"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "Raspored"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "Horizontalno"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "Vertikalno"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "Oblik"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "Kvadrat"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "Zaokruženo"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "Krug"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "Gap"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "Boje brenda"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "Boje za:"
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "Boja pozadine"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "Boja teksta"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "Dugmad za omotavanje"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "Praćenje"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "Dodajte utm parametre"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "Dugmad za lagano deljenje"
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "Dugmad za deljenje prilagođena privatnosti sa izvornim linkom za deljenje i kopi"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "podeli"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "društvena"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "deljenje"

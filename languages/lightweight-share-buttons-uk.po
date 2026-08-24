@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.725Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "Легкі кнопки \"Поділитися\""
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "Легкий, зручний для конфіденційності блок спільного доступу до соціальних мереж із підтримкою нативного спільного доступу та копіювальних посилань."
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "Поділитися"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "Копіювати посилання"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "Електронна пошта"
 
-msgid "Share this page"
-msgstr "Поділитися цією сторінкою"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "Скопійовано!"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "Скопіюйте це посилання:"
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "Поділитися цією сторінкою"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "Нативна частка"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "Перетягніть, щоб змінити порядок"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "Платформи"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "Увімкніть більше платформ або змініть порядок активних кнопок."
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "Відновити налаштування за замовчуванням"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "Зміст"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "Показати заголовок"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "Заголовок"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "Спеціальна назва (необов 'язково)"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Використовується Native Share, WhatsApp, електронною поштою, Telegram, X, Bluesky, Threads та Reddit. Facebook і LinkedIn читають заголовок зі сторінки метаданих Open Graph."
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "Текст повідомлення (необов 'язково)"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Використовується Native Share, WhatsApp, електронною поштою, Telegram, X, Bluesky та Threads. Facebook і LinkedIn не приймають користувацьке повідомлення; Reddit використовує лише заголовок і URL-адресу."
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "Користувацька URL-адреса"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "Користувацька URL-адреса буде надана спільно."
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "Поточна URL-адреса сторінки буде надана автоматично."
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "Введіть повну URL-адресу або домен, наприклад example.com/page."
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "Зовнішній вигляд"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "Вміст кнопки"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "Піктограми та етикетки"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "Лише піктограми"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "Лише етикетки"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "Розмір"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "Макет"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "Вертикально"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "Форма"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "Квадрат"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "Округлений"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "Коло"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "Розрив"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "Фірмові кольори"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "Кольори для:"
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "Колір фону"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "Колір тексту"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "Кнопки обгортання"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "Відстеження"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "Додати параметри UTM"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "Легкі кнопки \"Поділитися\""
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "Кнопки обміну конфіденційністю з нативним обміном та посиланням для копіювання."
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "частка"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "соціальний"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "спільний доступ"

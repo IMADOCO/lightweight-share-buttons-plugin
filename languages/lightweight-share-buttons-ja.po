@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.709Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "ライトウェイトシェアボタン"
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "ネイティブ共有とコピーリンクのサポートを備えた、軽量でプライバシーに配慮したソーシャル共有ブロック。"
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "共有"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "リンクをコピー"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "メール"
 
-msgid "Share this page"
-msgstr "このページを共有"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "コピーしました！"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "このリンクをコピー："
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "このページを共有"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "ネイティブ共有"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "ドラッグして並べ替え"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "プラットフォーム"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "より多くのプラットフォームを有効にするか、アクティブなボタンの順序を変更します。"
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "デフォルトに戻す"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "コンテンツ"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "見出しを表示"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "見出し"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "カスタムタイトル（任意）"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Native Share、WhatsApp、メール、Telegram、X、Bluesky、Threads、Redditで使用されます。 FacebookとLinkedInは、Open Graphメタデータのページからタイトルを読み取ります。"
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "メッセージテキスト（任意）"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Native Share、WhatsApp、メール、Telegram、X、Bluesky、スレッドで使用されます。 FacebookとLinkedInはカスタムメッセージを受け付けません。RedditはタイトルとURLのみを使用します。"
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "カスタムURL"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "カスタムURLが共有されます。"
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "現在のページのURLは自動的に共有されます。"
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "完全なURLまたはドメイン（ example.com/pageなど）を入力します。"
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "外観"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "ボタンの内容"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "アイコンとラベル"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "アイコンのみ"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "ラベルのみ"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "サイズ"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "レイアウト"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "水平"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "垂直"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "形状"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "正方形"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "丸みを帯びた"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "円"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "ギャップ"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "ブランドカラー"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "カラー："
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "背景色"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "テキストの色"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "ラップボタン"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "トラッキング"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "UTMパラメータの追加"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "ライトウェイトシェアボタン"
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "ネイティブ共有とコピーリンクを備えたプライバシーに配慮した共有ボタン。"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "共有"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "ソーシャル"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "共有"

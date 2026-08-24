@@ -29,5 +29,10 @@ add_action( 'init', 'lightweight_share_buttons_load_textdomain' );
 /** Register the block from its metadata. */
 function lightweight_share_buttons_register_block() {
 	register_block_type( __DIR__ . '/build' );
+	wp_set_script_translations(
+		'imado-share-buttons-editor-script',
+		'lightweight-share-buttons',
+		plugin_dir_path( __FILE__ ) . 'languages'
+	);
 }
 add_action( 'init', 'lightweight_share_buttons_register_block' );

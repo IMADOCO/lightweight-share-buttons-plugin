@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: la\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.750Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "Datum diventerum"
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "Blaogy dividus socialyes cum native share and copy-link support."
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "Communica"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "Vinculum exscribe"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "Epistula electronica"
 
-msgid "Share this page"
-msgstr "Hanc paginam communica"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "Exscriptum!"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "Hoc vinculum exscribe:"
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "Hanc paginam communica"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "Native Partis"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "Retine adhucum"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "Platforms"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "Enable more platform or change the order of active buttons."
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "Scripta Edere"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "Contents"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "Próximo Cōnne"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "Tituli"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "Tituli Customis (optionalis)"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook et LinkedIn tabularium titulo de pagea Open Graph metadata."
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "Textus Message (optionalis)"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook et LinkedIn non accept a custom message; Reddit use only the title and URL."
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "Adnotationes URL"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "Adiunculo URL habet."
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "URL-n'ny pejy amin'izao fotoana izao dia hozaraina automatique."
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "Urbem vel toutes URL, vel domen, exempli: example.com/page."
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "Explicabo"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "Contentsum thonum"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "Tabularium et labelus"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "Iconium"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "Tituli solam"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "Forma"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "Mutare"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "Vertical"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "Forma"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "Cara"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "Apparatus"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "Circle"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "GAP"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "Colum Brandis"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "Colors for:"
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "Loko afara"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "Lokon'ny lahabolana"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "Wrap buttons"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "Tracking"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "Forma UTM parameter"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "Datum diventerum"
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "Privacy friendly share buttons with native sharing and copy link."
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "partis"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "socialis"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "partes"

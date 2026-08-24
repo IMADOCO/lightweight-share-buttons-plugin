@@ -6,6 +6,7 @@
   "engines": { "node": ">=20.19", "npm": ">=10.2" },
   "scripts": {
     "build": "wp-scripts build --webpack-copy-php && node scripts/protect-asset-files.js",
+    "i18n:build": "node scripts/generate-translations.js",
     "start": "wp-scripts start --webpack-copy-php",
     "lint:js": "wp-scripts lint-js src",
     "plugin-zip": "wp-scripts plugin-zip"

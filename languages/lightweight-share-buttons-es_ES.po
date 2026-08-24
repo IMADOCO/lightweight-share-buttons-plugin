@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.679Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "Botones de compartir ligeros"
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "Un bloque de intercambio social ligero y respetuoso con la privacidad con soporte nativo para compartir y copiar enlaces."
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "Compartir"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "Copiar enlace"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "Correo electrónico"
 
-msgid "Share this page"
-msgstr "Compartir esta página"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "¡Copiado!"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "Copia este enlace:"
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "Compartir esta página"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "Compartir nativo"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "Arrastra para reordenar"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "Plataformas"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "Habilite más plataformas o cambie el orden de los botones activos."
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "Restaurar valores predeterminados"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "Contenido"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "Mostrar encabezado"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "Encabezado"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "Título personalizado (opcional)"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Utilizado por Native Share, WhatsApp, correo electrónico, Telegram, X, Bluesky, Threads y Reddit. Facebook y LinkedIn leen el título de la página Open Graph metadata."
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "Texto del mensaje (opcional)"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Utilizado por Native Share, WhatsApp, correo electrónico, Telegram, X, Bluesky y Threads. Facebook y LinkedIn no aceptan un mensaje personalizado; Reddit utiliza solo el título y la URL."
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "URL personalizada"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "Se compartirá la URL personalizada."
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "La URL de la página actual se compartirá automáticamente."
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "Introduzca una URL completa o un dominio, por ejemplo, example.com/page."
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "Aspecto"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "Contenido del botón"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "Iconos y etiquetas"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "Solo iconos"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "Solo etiquetas"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "Tamaño"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "Diseño"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "Vertical"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "Forma"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "Cuadrado"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "Redondeado"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "Círculo"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "Brecha"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "Colores de la marca"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "Colores para:"
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "Color del texto"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "Botones de ajuste"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "Seguimiento"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "Añadir parámetros UTM"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "Botones de compartir ligeros"
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "Botones de compartir amigables con la privacidad con intercambio nativo y enlace de copia."
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "compartir"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "social"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "compartiendo"

@@ -32,7 +32,13 @@ The text domain is `lightweight-share-buttons`. JavaScript and PHP user-facing s
 wp i18n make-pot . languages/lightweight-share-buttons.pot --exclude=node_modules
 ```
 
-Polish translations are included in `languages/lightweight-share-buttons-pl_PL.po`.
+Regenerate the bundled PO files from the checked-in translation catalog with:
+
+```sh
+npm run i18n:build
+```
+
+Compile the resulting PO files to MO and JavaScript JSON catalogs with WP-CLI before creating the release archive.
 
 Bundled translations are available for Albanian, Arabic, Chinese (Simplified), Czech, Danish, Dutch, Estonian, Finnish, French, Georgian, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Latin, Lithuanian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, and Ukrainian.
 

@@ -1,25 +1,239 @@
+# Copyright (C) 2026 IMADO
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Share Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lightweight-share-buttons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-24T15:09:00+02:00\n"
+"PO-Revision-Date: 2026-08-24T13:34:14.781Z\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lightweight-share-buttons\n"
 
+#. Plugin Name of the plugin
+#: lightweight-share-buttons.php:3
+msgid "Lightweight Share Buttons"
+msgstr "Lehká tlačítka pro sdílení"
+
+#. Description of the plugin
+#: lightweight-share-buttons.php:4
+msgid "A lightweight, privacy-friendly social sharing block with native share and copy-link support."
+msgstr "Lehký blok pro sdílení na sociálních sítích šetrný k soukromí, s nativním sdílením a kopírováním odkazu."
+
+#. Author of the plugin
+#: lightweight-share-buttons.php:8
+msgid "IMADO"
+msgstr "IMADO"
+
+#. Author URI of the plugin
+#: lightweight-share-buttons.php:9
+msgid "https://imado.co"
+msgstr "https://imado.co"
+
+#: src/render.php:61
+#: src/index.js:39
 msgid "Share"
 msgstr "Sdílet"
 
+#: src/render.php:65
+#: src/index.js:20
 msgid "Copy Link"
 msgstr "Kopírovat odkaz"
 
+#: src/render.php:81
+#: src/index.js:21
 msgid "Email"
 msgstr "E-mail"
 
-msgid "Share this page"
-msgstr "Sdílet tuto stránku"
-
+#: src/render.php:131
 msgid "Copied!"
 msgstr "Zkopírováno!"
 
+#: src/render.php:132
 msgid "Copy this link:"
 msgstr "Zkopírujte tento odkaz:"
+
+#: src/render.php:141
+#: src/index.js:140
+msgid "Share this page"
+msgstr "Sdílet tuto stránku"
+
+#: src/index.js:20
+msgid "Native Share"
+msgstr "Nativní sdílení"
+
+#: src/index.js:88
+#: src/index.js:97
+msgid "Drag to reorder"
+msgstr "Přetažením změňte pořadí"
+
+#: src/index.js:106
+msgid "Platforms"
+msgstr "Platformy"
+
+#: src/index.js:107
+msgid "Enable more platforms or change the order of active buttons."
+msgstr "Povolte další platformy nebo změňte pořadí aktivních tlačítek."
+
+#: src/index.js:109
+msgid "Restore defaults"
+msgstr "Obnovit výchozí nastavení"
+
+#: src/index.js:110
+msgid "Content"
+msgstr "Obsah"
+
+#: src/index.js:111
+msgid "Show heading"
+msgstr "Zobrazit nadpis"
+
+#: src/index.js:112
+msgid "Heading"
+msgstr "Nadpis"
+
+#: src/index.js:113
+msgid "Custom title (optional)"
+msgstr "Vlastní název (volitelné)"
+
+#: src/index.js:113
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata."
+msgstr "Používá se pro Nativní sdílení, WhatsApp, e-mail, Telegram, X, Bluesky, Threads a Reddit. Facebook a LinkedIn načítají název z metadat Open Graph stránky."
+
+#: src/index.js:114
+msgid "Message text (optional)"
+msgstr "Text zprávy (volitelné)"
+
+#: src/index.js:114
+msgid "Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL."
+msgstr "Používá se pro Nativní sdílení, WhatsApp, e-mail, Telegram, X, Bluesky a Threads. Facebook a LinkedIn vlastní zprávu nepřijímají; Reddit používá pouze název a URL."
+
+#: src/index.js:115
+#: src/index.js:116
+msgid "Custom URL"
+msgstr "Vlastní URL"
+
+#: src/index.js:115
+msgid "The custom URL will be shared."
+msgstr "Bude sdílena vlastní URL."
+
+#: src/index.js:115
+msgid "The current page URL will be shared automatically."
+msgstr "URL aktuální stránky bude sdílena automaticky."
+
+#: src/index.js:116
+msgid "Enter a full URL or a domain, for example example.com/page."
+msgstr "Zadejte úplnou URL nebo doménu, například example.com/page."
+
+#: src/index.js:117
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: src/index.js:118
+msgid "Button content"
+msgstr "Obsah tlačítka"
+
+#: src/index.js:118
+msgid "Icons and labels"
+msgstr "Ikony a popisky"
+
+#: src/index.js:118
+msgid "Icons only"
+msgstr "Pouze ikony"
+
+#: src/index.js:118
+msgid "Labels only"
+msgstr "Pouze popisky"
+
+#: src/index.js:119
+msgid "Size"
+msgstr "Velikost"
+
+#: src/index.js:120
+msgid "Layout"
+msgstr "Rozložení"
+
+#: src/index.js:120
+msgid "Horizontal"
+msgstr "Vodorovné"
+
+#: src/index.js:120
+msgid "Vertical"
+msgstr "Svislé"
+
+#: src/index.js:121
+msgid "Shape"
+msgstr "Tvar"
+
+#: src/index.js:121
+msgid "Square"
+msgstr "Čtverec"
+
+#: src/index.js:121
+msgid "Rounded"
+msgstr "Zaoblené"
+
+#: src/index.js:121
+msgid "Circle"
+msgstr "Kruh"
+
+#: src/index.js:122
+msgid "Gap"
+msgstr "Mezera"
+
+#: src/index.js:123
+msgid "Brand colors"
+msgstr "Barvy značky"
+
+#: src/index.js:125
+msgid "Colors for:"
+msgstr "Barvy pro:"
+
+#: src/index.js:126
+msgid "Background color"
+msgstr "Barva pozadí"
+
+#: src/index.js:128
+msgid "Text color"
+msgstr "Barva textu"
+
+#: src/index.js:131
+msgid "Wrap buttons"
+msgstr "Zalamovat tlačítka"
+
+#: src/index.js:132
+msgid "Tracking"
+msgstr "Sledování"
+
+#: src/index.js:133
+msgid "Add UTM parameters"
+msgstr "Přidat parametry UTM"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Lightweight Share Buttons"
+msgstr "Lehká tlačítka pro sdílení"
+
+#: src/block.json
+msgctxt "block description"
+msgid "Privacy-friendly share buttons with native sharing and copy link."
+msgstr "Tlačítka pro sdílení šetrná k soukromí s nativním sdílením a kopírováním odkazu."
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "sdílet"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr "sociální"
+
+#: src/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "sdílení"
