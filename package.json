@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "license": "GPL-2.0-or-later",
-  "engines": { "node": ">=20.19", "npm": ">=10.2" },
+  "engines": {
+    "node": ">=20.19",
+    "npm": ">=10.2"
+  },
   "scripts": {
     "build": "wp-scripts build --webpack-copy-php && node scripts/protect-asset-files.js",
     "i18n:build": "node scripts/generate-translations.js",
@@ -11,5 +14,8 @@
     "lint:js": "wp-scripts lint-js src",
     "plugin-zip": "wp-scripts plugin-zip"
   },
-  "devDependencies": { "@wordpress/scripts": "^30.18.0" }
+  "devDependencies": {
+    "@wordpress/scripts": "^30.18.0",
+    "typescript": "5.3.3"
+  }
 }
