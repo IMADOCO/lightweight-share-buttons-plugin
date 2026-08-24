@@ -141,9 +141,10 @@ $lightweight_share_buttons_wrapper_attributes = get_block_wrapper_attributes(
 	<div class="lsb-buttons" role="group" aria-label="<?php esc_attr_e( 'Share this page', 'lightweight-share-buttons' ); ?>">
 		<?php
 		foreach ( $attributes['services'] as $lightweight_share_buttons_service ) :
-			if ( ! isset( $lightweight_share_buttons_services[ $lightweight_share_buttons_service ] ) ) {
+			if ( ! is_string( $lightweight_share_buttons_service ) || ! isset( $lightweight_share_buttons_services[ $lightweight_share_buttons_service ] ) ) {
 				continue;
-			} $lightweight_share_buttons_item = $lightweight_share_buttons_services[ $lightweight_share_buttons_service ];
+			}
+			$lightweight_share_buttons_item = $lightweight_share_buttons_services[ $lightweight_share_buttons_service ];
 			?>
 			<?php
 			$lightweight_share_buttons_button_style = '';

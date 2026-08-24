@@ -16,6 +16,22 @@
   "attributes": {
     "services": {
       "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "native",
+          "copy",
+          "facebook",
+          "whatsapp",
+          "linkedin",
+          "email",
+          "telegram",
+          "x",
+          "bluesky",
+          "threads",
+          "reddit"
+        ]
+      },
       "default": [
         "native",
         "copy",

@@ -10,7 +10,14 @@
   "keywords": ["share", "social", "sharing"],
   "textdomain": "lightweight-share-buttons",
   "attributes": {
-    "services": { "type": "array", "default": ["native", "copy", "facebook", "whatsapp", "linkedin"] },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["native", "copy", "facebook", "whatsapp", "linkedin", "email", "telegram", "x", "bluesky", "threads", "reddit"]
+      },
+      "default": ["native", "copy", "facebook", "whatsapp", "linkedin"]
+    },
     "displayMode": { "type": "string", "default": "icon-label" },
     "layout": { "type": "string", "default": "horizontal" },
     "alignment": { "type": "string", "default": "left" },
