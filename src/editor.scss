@@ -1,1 +1,97 @@
-.lsb-platform-control{display:flex;align-items:center;gap:8px;border:1px solid transparent;border-radius:4px;min-height:40px}.lsb-platform-control.is-drag-over{border-color:#3858e9;background:#f0f6fc}.lsb-platform-control>.components-base-control{flex:1;margin-bottom:0}.lsb-platform-control>.components-base-control .components-base-control__field{margin-bottom:0}.lsb-drag-handle{align-items:center;color:#757575;cursor:grab;display:flex;flex:0 0 auto;padding:8px 0}.lsb-drag-handle:active{cursor:grabbing}.lsb-platform-help{color:#757575;font-size:12px;margin-top:0}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button[draggable=true]{cursor:grab;position:relative;touch-action:none;transition:opacity .15s ease,transform .15s ease;user-select:none}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button[draggable=true]:active{cursor:grabbing}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button.is-dragging{opacity:.3}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button.is-drop-before:before,.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button.is-drop-after:after{background:#3858e9;border-radius:2px;content:"";height:calc(100% + 12px);position:absolute;top:-6px;width:3px}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button.is-drop-before:before{left:-6px}.editor-styles-wrapper .wp-block-imado-share-buttons .lsb-button.is-drop-after:after{right:-6px}.lsb-drag-ghost{background:#1e1e1e;border-radius:4px;color:#fff;font:600 12px/1.2 sans-serif;left:0;max-width:140px;opacity:.88;padding:7px 10px;pointer-events:none;position:fixed;top:0;white-space:nowrap;z-index:1000000}
+.lsb-platform-control {
+	align-items: center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	display: flex;
+	gap: 8px;
+	min-height: 40px;
+
+	&.is-drag-over {
+		background: #f0f6fc;
+		border-color: #3858e9;
+	}
+
+	> .components-base-control {
+		flex: 1;
+		margin-bottom: 0;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.lsb-drag-handle {
+	align-items: center;
+	color: #757575;
+	cursor: grab;
+	display: flex;
+	flex: 0 0 auto;
+	padding: 8px 0;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+.lsb-platform-help {
+	color: #757575;
+	font-size: 12px;
+	margin-top: 0;
+}
+
+.editor-styles-wrapper .wp-block-imado-share-buttons {
+
+	.lsb-button[draggable="true"] {
+		cursor: grab;
+		position: relative;
+		touch-action: none;
+		transition:
+			opacity 0.15s ease,
+			transform 0.15s ease;
+		user-select: none;
+
+		&:active {
+			cursor: grabbing;
+		}
+
+		&.is-dragging {
+			opacity: 0.3;
+		}
+
+		&.is-drop-before::before,
+		&.is-drop-after::after {
+			background: #3858e9;
+			border-radius: 2px;
+			content: "";
+			height: calc(100% + 12px);
+			position: absolute;
+			top: -6px;
+			width: 3px;
+		}
+
+		&.is-drop-before::before {
+			left: -6px;
+		}
+
+		&.is-drop-after::after {
+			right: -6px;
+		}
+	}
+}
+
+.lsb-drag-ghost {
+	background: #1e1e1e;
+	border-radius: 4px;
+	color: #fff;
+	font: 600 12px/1.2 sans-serif;
+	left: 0;
+	max-width: 140px;
+	opacity: 0.88;
+	padding: 7px 10px;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	white-space: nowrap;
+	z-index: 1000000;
+}
