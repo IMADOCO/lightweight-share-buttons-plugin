@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:       Lightweight Share Buttons
+ * Plugin URI:        https://github.com/IMADOCO/lightweight-share-buttons-plugin
  * Description:       A lightweight, privacy-friendly social sharing block with native share and copy-link support.
  * Version:           1.0.0
  * Requires at least: 6.6
