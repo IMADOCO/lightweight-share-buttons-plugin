@@ -1,5 +1,5 @@
 === Lightweight Share Buttons ===
-Contributors: imado
+Contributors: imado, imadoco
 Tags: share, social sharing, web share, copy link, block
 Requires at least: 6.6
 Tested up to: 7.1
