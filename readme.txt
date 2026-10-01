@@ -26,8 +26,6 @@ Features:
 
 No accounts, API keys, tracking, telemetry, SDKs, or remote assets are used.
 
-Bundled translations: Albanian, Arabic, Chinese (Simplified), Czech, Danish, Dutch, Estonian, Finnish, French, Georgian, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Latin, Lithuanian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, and Ukrainian.
-
 == Installation ==
 
 1. Upload the plugin directory to `/wp-content/plugins/` or install its ZIP file.
