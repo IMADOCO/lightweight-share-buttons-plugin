@@ -30,7 +30,7 @@ No accounts, API keys, tracking, telemetry, SDKs, or remote assets are used.
 
 1. Upload the plugin directory to `/wp-content/plugins/` or install its ZIP file.
 2. Activate **Lightweight Share Buttons by IMADO**.
-3. Add the **Lightweight Share Buttons** block in the block editor.
+3. Add the **Lightweight Share Buttons by IMADO** block in the block editor.
 
 == Frequently Asked Questions ==
 
