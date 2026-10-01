@@ -17,8 +17,8 @@ import * as i18n from '@wordpress/i18n';
 	var useBlockProps = blockEditor.useBlockProps;
 	var __ = i18n.__;
 	var services = [
-		[ 'native', __( 'Native Share', 'lightweight-share-buttons' ) ], [ 'copy', __( 'Copy Link', 'lightweight-share-buttons' ) ],
-		[ 'facebook', 'Facebook' ], [ 'whatsapp', 'WhatsApp' ], [ 'linkedin', 'LinkedIn' ], [ 'email', __( 'Email', 'lightweight-share-buttons' ) ],
+		[ 'native', __( 'Native Share', 'imado-share-buttons' ) ], [ 'copy', __( 'Copy Link', 'imado-share-buttons' ) ],
+		[ 'facebook', 'Facebook' ], [ 'whatsapp', 'WhatsApp' ], [ 'linkedin', 'LinkedIn' ], [ 'email', __( 'Email', 'imado-share-buttons' ) ],
 		[ 'telegram', 'Telegram' ], [ 'x', 'X' ], [ 'bluesky', 'Bluesky' ], [ 'threads', 'Threads' ], [ 'reddit', 'Reddit' ]
 	];
 	var defaults = [ 'native', 'copy', 'facebook', 'whatsapp', 'linkedin' ];
@@ -36,7 +36,7 @@ import * as i18n from '@wordpress/i18n';
 		reddit: 'M22 12.2c0-1.2-1-2.2-2.2-2.2-.6 0-1.1.2-1.5.6-1.5-1-3.5-1.6-5.6-1.7l1.1-3.3 2.8.7a1.8 1.8 0 1 0 .4-1.5l-3.7-.9c-.4-.1-.8.1-.9.5L11 8.9c-2.1.1-4 .7-5.4 1.7-.4-.4-.9-.6-1.5-.6a2.2 2.2 0 0 0-1.4 3.9 4 4 0 0 0-.1 1c0 3.3 4.2 6 9.4 6s9.4-2.7 9.4-6c0-.3 0-.7-.1-1 .5-.4.7-1 .7-1.7ZM7.5 14.3a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0Zm8.2 3.5c-1.5 1.1-5.9 1.1-7.4 0-.3-.2-.3-.6-.1-.9.2-.3.6-.3.9-.1 1 .7 4.8.7 5.8 0 .3-.2.7-.2.9.1.2.3.2.7-.1.9Zm.2-1.9a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z'
 	};
 	function getService( slug ) { return services.find( function ( service ) { return service[0] === slug; } ); }
-	function previewLabel( service ) { return 'native' === service[0] ? __( 'Share', 'lightweight-share-buttons' ) : service[1]; }
+	function previewLabel( service ) { return 'native' === service[0] ? __( 'Share', 'imado-share-buttons' ) : service[1]; }
 	function PreviewIcon( props ) {
 		return el( 'span', { className: 'lsb-icon', style: props.style, 'aria-hidden': 'true' }, el( 'svg', { viewBox: '0 0 24 24', focusable: 'false' }, el( 'path', { d: iconPaths[ props.service ] || iconPaths.native } ) ) );
 	}
@@ -85,7 +85,7 @@ import * as i18n from '@wordpress/i18n';
 		var platformControls = orderedServices.map( function ( service ) {
 			var enabled = a.services.indexOf( service[0] ) >= 0;
 			return el( 'div', { className: 'lsb-platform-control', key: service[0], onDragOver: function ( event ) { if ( enabled ) dragOver( event, service[0] ); }, onDragLeave: leaveDrag, onDrop: function ( event ) { if ( enabled ) drop( event, service[0] ); } },
-				enabled && el( 'span', { className: 'lsb-drag-handle', draggable: true, title: __( 'Drag to reorder', 'lightweight-share-buttons' ), onDragStart: function ( event ) { startDrag( event, service[0] ); }, onDragEnd: endDrag }, el( components.Icon, { icon: 'menu' } ) ),
+				enabled && el( 'span', { className: 'lsb-drag-handle', draggable: true, title: __( 'Drag to reorder', 'imado-share-buttons' ), onDragStart: function ( event ) { startDrag( event, service[0] ); }, onDragEnd: endDrag }, el( components.Icon, { icon: 'menu' } ) ),
 				el( components.ToggleControl, { label: service[1], checked: enabled, onChange: function () { toggle( service[0] ); }, __nextHasNoMarginBottom: true } )
 			);
 		} );
@@ -94,7 +94,7 @@ import * as i18n from '@wordpress/i18n';
 			var colors = ( a.serviceColors && a.serviceColors[ slug ] ) || {};
 			var customStyle = a.useBrandColors ? {} : { backgroundColor: colors.background || '#000000', color: colors.text || '#ffffff' };
 			if ( ! service ) return null;
-			return el( 'button', { type: 'button', className: 'lsb-button is-' + slug + ( selectedService === slug ? ' is-selected-service' : '' ), style: customStyle, key: slug, draggable: true, 'data-lsb-preview-service': slug, title: __( 'Drag to reorder', 'lightweight-share-buttons' ), 'aria-label': previewLabel( service ), onClick: function ( event ) { event.preventDefault(); setSelectedService( slug ); }, onPointerDown: function ( event ) { startPointerDrag( event, slug ); }, onDragStart: function ( event ) { startDrag( event, slug ); }, onDragEnd: endDrag, onDragOver: function ( event ) { dragOver( event, slug ); }, onDragLeave: leaveDrag, onDrop: function ( event ) { drop( event, slug ); } },
+			return el( 'button', { type: 'button', className: 'lsb-button is-' + slug + ( selectedService === slug ? ' is-selected-service' : '' ), style: customStyle, key: slug, draggable: true, 'data-lsb-preview-service': slug, title: __( 'Drag to reorder', 'imado-share-buttons' ), 'aria-label': previewLabel( service ), onClick: function ( event ) { event.preventDefault(); setSelectedService( slug ); }, onPointerDown: function ( event ) { startPointerDrag( event, slug ); }, onDragStart: function ( event ) { startDrag( event, slug ); }, onDragEnd: endDrag, onDragOver: function ( event ) { dragOver( event, slug ); }, onDragLeave: leaveDrag, onDrop: function ( event ) { drop( event, slug ); } },
 				el( PreviewIcon, { service: slug, style: { color: customStyle.color } } ), el( 'span', { className: 'lsb-label', style: { color: customStyle.color } }, previewLabel( service ) )
 			);
 		} );
@@ -103,41 +103,41 @@ import * as i18n from '@wordpress/i18n';
 				el( AlignmentToolbar, { value: a.alignment, onChange: function ( value ) { set( { alignment: value || 'left' } ); } } )
 			),
 			el( InspectorControls, null,
-				el( components.PanelBody, { title: __( 'Platforms', 'lightweight-share-buttons' ), initialOpen: true },
-					el( 'p', { className: 'lsb-platform-help' }, __( 'Enable more platforms or change the order of active buttons.', 'lightweight-share-buttons' ) ),
+				el( components.PanelBody, { title: __( 'Platforms', 'imado-share-buttons' ), initialOpen: true },
+					el( 'p', { className: 'lsb-platform-help' }, __( 'Enable more platforms or change the order of active buttons.', 'imado-share-buttons' ) ),
 					platformControls,
-					el( components.Button, { variant: 'secondary', onClick: function () { set( { services: defaults } ); } }, __( 'Restore defaults', 'lightweight-share-buttons' ) ) ),
-				el( components.PanelBody, { title: __( 'Content', 'lightweight-share-buttons' ) },
-					el( components.ToggleControl, { label: __( 'Show heading', 'lightweight-share-buttons' ), checked: a.showHeading, onChange: function ( value ) { set( { showHeading: value } ); } } ),
-					a.showHeading && el( components.TextControl, { label: __( 'Heading', 'lightweight-share-buttons' ), value: a.heading, onChange: function ( value ) { set( { heading: value } ); } } ),
-					el( components.TextControl, { label: LabelWithTooltip( __( 'Custom title (optional)', 'lightweight-share-buttons' ), __( 'Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata.', 'lightweight-share-buttons' ) ), value: a.customTitle, onChange: function ( value ) { set( { customTitle: value } ); } } ),
-					el( components.TextareaControl, { label: LabelWithTooltip( __( 'Message text (optional)', 'lightweight-share-buttons' ), __( 'Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL.', 'lightweight-share-buttons' ) ), value: a.customText, onChange: function ( value ) { set( { customText: value } ); } } ),
-					el( components.ToggleControl, { label: __( 'Custom URL', 'lightweight-share-buttons' ), help: a.urlMode === 'custom' ? __( 'The custom URL will be shared.', 'lightweight-share-buttons' ) : __( 'The current page URL will be shared automatically.', 'lightweight-share-buttons' ), checked: a.urlMode === 'custom', onChange: function ( value ) { set( { urlMode: value ? 'custom' : 'automatic' } ); } } ),
-					a.urlMode === 'custom' && el( components.TextControl, { label: __( 'Custom URL', 'lightweight-share-buttons' ), help: __( 'Enter a full URL or a domain, for example example.com/page.', 'lightweight-share-buttons' ), type: 'text', value: a.customUrl, onChange: function ( value ) { set( { customUrl: value } ); } } ) ),
-				el( components.PanelBody, { title: __( 'Appearance', 'lightweight-share-buttons' ) },
-					el( Select, { label: __( 'Button content', 'lightweight-share-buttons' ), value: a.displayMode, options: [ { label: __( 'Icons and labels', 'lightweight-share-buttons' ), value: 'icon-label' }, { label: __( 'Icons only', 'lightweight-share-buttons' ), value: 'icon' }, { label: __( 'Labels only', 'lightweight-share-buttons' ), value: 'label' } ], onChange: function ( value ) { set( { displayMode: value } ); } } ),
-					el( Select, { label: __( 'Size', 'lightweight-share-buttons' ), value: a.size, options: [ 'small', 'medium', 'large' ].map( function(v){ return { label: v.charAt(0).toUpperCase()+v.slice(1), value:v }; } ), onChange: function ( value ) { set( { size: value } ); } } ),
-					el( Select, { label: __( 'Layout', 'lightweight-share-buttons' ), value: a.layout, options: [ { label: __( 'Horizontal', 'lightweight-share-buttons' ), value: 'horizontal' }, { label: __( 'Vertical', 'lightweight-share-buttons' ), value: 'vertical' } ], onChange: function ( value ) { set( { layout: value } ); } } ),
-					el( Select, { label: __( 'Shape', 'lightweight-share-buttons' ), value: a.shape, options: [ { label: __( 'Square', 'lightweight-share-buttons' ), value: 'square' }, { label: __( 'Rounded', 'lightweight-share-buttons' ), value: 'rounded' }, { label: __( 'Circle', 'lightweight-share-buttons' ), value: 'circle' } ], onChange: function ( value ) { set( { shape: value } ); } } ),
-					el( components.RangeControl, { label: __( 'Gap', 'lightweight-share-buttons' ), value: a.gap, min: 0, max: 32, onChange: function ( value ) { set( { gap: value } ); } } ),
-					el( components.ToggleControl, { label: __( 'Brand colors', 'lightweight-share-buttons' ), checked: a.useBrandColors, onChange: function ( value ) { set( { useBrandColors: value } ); } } ),
+					el( components.Button, { variant: 'secondary', onClick: function () { set( { services: defaults } ); } }, __( 'Restore defaults', 'imado-share-buttons' ) ) ),
+				el( components.PanelBody, { title: __( 'Content', 'imado-share-buttons' ) },
+					el( components.ToggleControl, { label: __( 'Show heading', 'imado-share-buttons' ), checked: a.showHeading, onChange: function ( value ) { set( { showHeading: value } ); } } ),
+					a.showHeading && el( components.TextControl, { label: __( 'Heading', 'imado-share-buttons' ), value: a.heading, onChange: function ( value ) { set( { heading: value } ); } } ),
+					el( components.TextControl, { label: LabelWithTooltip( __( 'Custom title (optional)', 'imado-share-buttons' ), __( 'Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, Threads, and Reddit. Facebook and LinkedIn read the title from the page Open Graph metadata.', 'imado-share-buttons' ) ), value: a.customTitle, onChange: function ( value ) { set( { customTitle: value } ); } } ),
+					el( components.TextareaControl, { label: LabelWithTooltip( __( 'Message text (optional)', 'imado-share-buttons' ), __( 'Used by Native Share, WhatsApp, email, Telegram, X, Bluesky, and Threads. Facebook and LinkedIn do not accept a custom message; Reddit uses only the title and URL.', 'imado-share-buttons' ) ), value: a.customText, onChange: function ( value ) { set( { customText: value } ); } } ),
+					el( components.ToggleControl, { label: __( 'Custom URL', 'imado-share-buttons' ), help: a.urlMode === 'custom' ? __( 'The custom URL will be shared.', 'imado-share-buttons' ) : __( 'The current page URL will be shared automatically.', 'imado-share-buttons' ), checked: a.urlMode === 'custom', onChange: function ( value ) { set( { urlMode: value ? 'custom' : 'automatic' } ); } } ),
+					a.urlMode === 'custom' && el( components.TextControl, { label: __( 'Custom URL', 'imado-share-buttons' ), help: __( 'Enter a full URL or a domain, for example example.com/page.', 'imado-share-buttons' ), type: 'text', value: a.customUrl, onChange: function ( value ) { set( { customUrl: value } ); } } ) ),
+				el( components.PanelBody, { title: __( 'Appearance', 'imado-share-buttons' ) },
+					el( Select, { label: __( 'Button content', 'imado-share-buttons' ), value: a.displayMode, options: [ { label: __( 'Icons and labels', 'imado-share-buttons' ), value: 'icon-label' }, { label: __( 'Icons only', 'imado-share-buttons' ), value: 'icon' }, { label: __( 'Labels only', 'imado-share-buttons' ), value: 'label' } ], onChange: function ( value ) { set( { displayMode: value } ); } } ),
+					el( Select, { label: __( 'Size', 'imado-share-buttons' ), value: a.size, options: [ 'small', 'medium', 'large' ].map( function(v){ return { label: v.charAt(0).toUpperCase()+v.slice(1), value:v }; } ), onChange: function ( value ) { set( { size: value } ); } } ),
+					el( Select, { label: __( 'Layout', 'imado-share-buttons' ), value: a.layout, options: [ { label: __( 'Horizontal', 'imado-share-buttons' ), value: 'horizontal' }, { label: __( 'Vertical', 'imado-share-buttons' ), value: 'vertical' } ], onChange: function ( value ) { set( { layout: value } ); } } ),
+					el( Select, { label: __( 'Shape', 'imado-share-buttons' ), value: a.shape, options: [ { label: __( 'Square', 'imado-share-buttons' ), value: 'square' }, { label: __( 'Rounded', 'imado-share-buttons' ), value: 'rounded' }, { label: __( 'Circle', 'imado-share-buttons' ), value: 'circle' } ], onChange: function ( value ) { set( { shape: value } ); } } ),
+					el( components.RangeControl, { label: __( 'Gap', 'imado-share-buttons' ), value: a.gap, min: 0, max: 32, onChange: function ( value ) { set( { gap: value } ); } } ),
+					el( components.ToggleControl, { label: __( 'Brand colors', 'imado-share-buttons' ), checked: a.useBrandColors, onChange: function ( value ) { set( { useBrandColors: value } ); } } ),
 					! a.useBrandColors && el( 'div', { className: 'lsb-color-controls' },
-						el( 'p', null, __( 'Colors for:', 'lightweight-share-buttons' ) + ' ', el( 'strong', null, previewLabel( getService( selectedService ) || services[0] ) ) ),
-						el( 'p', { className: 'lsb-control-label' }, __( 'Background color', 'lightweight-share-buttons' ) ),
+						el( 'p', null, __( 'Colors for:', 'imado-share-buttons' ) + ' ', el( 'strong', null, previewLabel( getService( selectedService ) || services[0] ) ) ),
+						el( 'p', { className: 'lsb-control-label' }, __( 'Background color', 'imado-share-buttons' ) ),
 						el( ColorPalette, { value: ( ( a.serviceColors || {} )[ selectedService ] || {} ).background, onChange: function ( value ) { setServiceColor( 'background', value ); }, clearable: true } ),
-						el( 'p', { className: 'lsb-control-label' }, __( 'Text color', 'lightweight-share-buttons' ) ),
+						el( 'p', { className: 'lsb-control-label' }, __( 'Text color', 'imado-share-buttons' ) ),
 						el( ColorPalette, { value: ( ( a.serviceColors || {} )[ selectedService ] || {} ).text, onChange: function ( value ) { setServiceColor( 'text', value ); }, clearable: true } )
 					),
-					el( components.ToggleControl, { label: __( 'Wrap buttons', 'lightweight-share-buttons' ), checked: a.wrap, onChange: function ( value ) { set( { wrap: value } ); } } ) ),
-				el( components.PanelBody, { title: __( 'Tracking', 'lightweight-share-buttons' ) },
-					el( components.ToggleControl, { label: __( 'Add UTM parameters', 'lightweight-share-buttons' ), checked: a.utmEnabled, onChange: function ( value ) { set( { utmEnabled: value } ); } } ),
+					el( components.ToggleControl, { label: __( 'Wrap buttons', 'imado-share-buttons' ), checked: a.wrap, onChange: function ( value ) { set( { wrap: value } ); } } ) ),
+				el( components.PanelBody, { title: __( 'Tracking', 'imado-share-buttons' ) },
+					el( components.ToggleControl, { label: __( 'Add UTM parameters', 'imado-share-buttons' ), checked: a.utmEnabled, onChange: function ( value ) { set( { utmEnabled: value } ); } } ),
 					a.utmEnabled && el( 'div', null,
 						el( components.TextControl, { label: 'utm_source', value: a.utmSource, onChange: function ( value ) { set( { utmSource: value } ); } } ),
 						el( components.TextControl, { label: 'utm_medium', value: a.utmMedium, onChange: function ( value ) { set( { utmMedium: value } ); } } ),
 						el( components.TextControl, { label: 'utm_campaign', value: a.utmCampaign, onChange: function ( value ) { set( { utmCampaign: value } ); } } ) ) )
 			),
 			a.showHeading && a.heading && el( 'p', { className: 'lsb-heading' }, a.heading ),
-			el( 'div', { className: 'lsb-buttons', role: 'group', 'aria-label': __( 'Share this page', 'lightweight-share-buttons' ) }, previewButtons )
+			el( 'div', { className: 'lsb-buttons', role: 'group', 'aria-label': __( 'Share this page', 'imado-share-buttons' ) }, previewButtons )
 		);
 	}
 	blocks.registerBlockType( 'imado/share-buttons', { edit: Edit, save: function () { return null; } } );

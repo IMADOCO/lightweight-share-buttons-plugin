@@ -8,7 +8,7 @@
   "icon": "share",
   "description": "Privacy-friendly share buttons with native sharing and copy link.",
   "keywords": ["share", "social", "sharing"],
-  "textdomain": "lightweight-share-buttons",
+  "textdomain": "imado-share-buttons",
   "attributes": {
     "services": {
       "type": "array",

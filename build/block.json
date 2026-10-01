@@ -12,7 +12,7 @@
     "social",
     "sharing"
   ],
-  "textdomain": "lightweight-share-buttons",
+  "textdomain": "imado-share-buttons",
   "attributes": {
     "services": {
       "type": "array",

@@ -3,7 +3,7 @@ const path = require( 'path' );
 
 const root = path.resolve( __dirname, '..' );
 const directory = path.join( root, 'languages' );
-const template = fs.readFileSync( path.join( directory, 'lightweight-share-buttons.pot' ), 'utf8' );
+const template = fs.readFileSync( path.join( directory, 'imado-share-buttons.pot' ), 'utf8' );
 const catalogs = JSON.parse( fs.readFileSync( path.join( __dirname, 'translations.json' ), 'utf8' ) );
 const escapePo = ( value ) => value.replace( /\\/g, '\\\\' ).replace( /"/g, '\\"' );
 const unescapePo = ( value ) => value.replace( /\\"/g, '"' ).replace( /\\\\/g, '\\' );
@@ -21,5 +21,5 @@ for ( const [ locale, translations ] of Object.entries( catalogs ) ) {
 		if ( ! translations[ message ] ) throw new Error( `Missing ${ locale } translation: ${ message }` );
 		return entry.replace( /^msgstr ""$/m, `msgstr "${ escapePo( translations[ message ] ) }"` );
 	} ).join( '\n\n' );
-	fs.writeFileSync( path.join( directory, `lightweight-share-buttons-${ locale }.po` ), output, 'utf8' );
+	fs.writeFileSync( path.join( directory, `imado-share-buttons-${ locale }.po` ), output, 'utf8' );
 }

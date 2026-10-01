@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Lightweight Share Buttons
+ * Plugin Name:       Lightweight Share Buttons by IMADO
  * Plugin URI:        https://github.com/IMADOCO/lightweight-share-buttons-plugin
  * Description:       A lightweight, privacy-friendly social sharing block with native share and copy-link support.
  * Version:           1.0.0
@@ -10,7 +10,7 @@
  * Author URI:        https://imado.co
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       lightweight-share-buttons
+ * Text Domain:       imado-share-buttons
  * Domain Path:       /languages
  *
  * @package LightweightShareButtons
@@ -25,7 +25,7 @@ function lightweight_share_buttons_register_block() {
 	register_block_type( __DIR__ . '/build' );
 	wp_set_script_translations(
 		'imado-share-buttons-editor-script',
-		'lightweight-share-buttons',
+		'imado-share-buttons',
 		plugin_dir_path( __FILE__ ) . 'languages'
 	);
 }

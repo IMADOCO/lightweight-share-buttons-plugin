@@ -60,11 +60,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	$lightweight_share_buttons_email_body    = rawurlencode( trim( $lightweight_share_buttons_text . "\n\n" . $lightweight_share_buttons_url ) );
 	$lightweight_share_buttons_services      = array(
 		'native'   => array(
-			'label' => __( 'Share', 'lightweight-share-buttons' ),
+			'label' => __( 'Share', 'imado-share-buttons' ),
 			'url'   => '',
 		),
 		'copy'     => array(
-			'label' => __( 'Copy Link', 'lightweight-share-buttons' ),
+			'label' => __( 'Copy Link', 'imado-share-buttons' ),
 			'url'   => '',
 		),
 		'facebook' => array(
@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			'url'   => 'https://www.linkedin.com/sharing/share-offsite/?url=' . $lightweight_share_buttons_encoded_url,
 		),
 		'email'    => array(
-			'label' => __( 'Email', 'lightweight-share-buttons' ),
+			'label' => __( 'Email', 'imado-share-buttons' ),
 			'url'   => 'mailto:?subject=' . $lightweight_share_buttons_encoded_title . '&body=' . $lightweight_share_buttons_email_body,
 		),
 		'telegram' => array(
@@ -130,8 +130,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			'data-url'          => $lightweight_share_buttons_url,
 			'data-title'        => $lightweight_share_buttons_title,
 			'data-text'         => $lightweight_share_buttons_text,
-			'data-copied-label' => esc_attr__( 'Copied!', 'lightweight-share-buttons' ),
-			'data-copy-prompt'  => esc_attr__( 'Copy this link:', 'lightweight-share-buttons' ),
+			'data-copied-label' => esc_attr__( 'Copied!', 'imado-share-buttons' ),
+			'data-copy-prompt'  => esc_attr__( 'Copy this link:', 'imado-share-buttons' ),
 		)
 	);
 	?>
@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	if ( ! empty( $attributes['showHeading'] ) && '' !== trim( $attributes['heading'] ) ) :
 		?>
 		<p class="lsb-heading"><?php echo esc_html( $attributes['heading'] ); ?></p><?php endif; ?>
-	<div class="lsb-buttons" role="group" aria-label="<?php esc_attr_e( 'Share this page', 'lightweight-share-buttons' ); ?>">
+	<div class="lsb-buttons" role="group" aria-label="<?php esc_attr_e( 'Share this page', 'imado-share-buttons' ); ?>">
 		<?php
 		foreach ( $attributes['services'] as $lightweight_share_buttons_service ) :
 			if ( ! is_string( $lightweight_share_buttons_service ) || ! isset( $lightweight_share_buttons_services[ $lightweight_share_buttons_service ] ) ) {

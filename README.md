@@ -1,4 +1,4 @@
-# Lightweight Share Buttons
+# Lightweight Share Buttons by IMADO
 
 A single, dynamic WordPress block for private and lightweight page sharing. It includes Native Share, Copy Link, Facebook, WhatsApp, LinkedIn, email, Telegram, X, Bluesky, Threads, and Reddit.
 
@@ -26,10 +26,10 @@ The distributed `build/` directory is generated from `src/`. The plugin has no r
 
 ## Translation
 
-The text domain is `lightweight-share-buttons`. JavaScript and PHP user-facing strings use WordPress internationalization functions. Translation sources can be extracted with WP-CLI:
+The text domain is `imado-share-buttons`. JavaScript and PHP user-facing strings use WordPress internationalization functions. Translation sources can be extracted with WP-CLI:
 
 ```sh
-wp i18n make-pot . languages/lightweight-share-buttons.pot --exclude=node_modules
+wp i18n make-pot . languages/imado-share-buttons.pot --exclude=node_modules
 ```
 
 Regenerate the bundled PO files from the checked-in translation catalog with:
