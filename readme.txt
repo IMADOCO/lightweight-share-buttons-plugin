@@ -1,4 +1,4 @@
-=== Lightweight Share Buttons by IMADO ===
+=== IMADO Share Buttons ===
 Contributors: imado, imadoco
 Tags: share, social sharing, web share, copy link, block
 Requires at least: 6.6
@@ -12,7 +12,7 @@ A fast, private sharing block with native share, copy link, and nine social dest
 
 == Description ==
 
-Lightweight Share Buttons by IMADO provides one focused Gutenberg block. It makes no external requests until a visitor chooses a destination, sets no cookies, collects no data, and includes no admin screen.
+IMADO Share Buttons provides one focused Gutenberg block. It makes no external requests until a visitor chooses a destination, sets no cookies, collects no data, and includes no admin screen.
 
 Features:
 
@@ -29,8 +29,8 @@ No accounts, API keys, tracking, telemetry, SDKs, or remote assets are used.
 == Installation ==
 
 1. Upload the plugin directory to `/wp-content/plugins/` or install its ZIP file.
-2. Activate **Lightweight Share Buttons by IMADO**.
-3. Add the **Lightweight Share Buttons by IMADO** block in the block editor.
+2. Activate **IMADO Share Buttons**.
+3. Add the **IMADO Share Buttons** block in the block editor.
 
 == Frequently Asked Questions ==
 

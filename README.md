@@ -1,4 +1,4 @@
-# Lightweight Share Buttons by IMADO
+# IMADO Share Buttons
 
 A single, dynamic WordPress block for private and lightweight page sharing. It includes Native Share, Copy Link, Facebook, WhatsApp, LinkedIn, email, Telegram, X, Bluesky, Threads, and Reddit.
 
